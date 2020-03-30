@@ -1,0 +1,33 @@
+{
+  "name": "ultra-utils",
+  "version": "0.0.1",
+  "description": "Ultra library of utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive \"./__tests__/*.test.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseClaudioADS/ultra-utils.git"
+  },
+  "keywords": [
+    "string",
+    "utils",
+    "array",
+    "util"
+  ],
+  "author": "Jose Claudio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoseClaudioADS/ultra-utils/issues"
+  },
+  "homepage": "https://github.com/JoseClaudioADS/ultra-utils#readme",
+  "devDependencies": {
+    "chai": "4.2.0",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.10.1",
+    "eslint-plugin-prettier": "3.1.2",
+    "mocha": "7.1.1",
+    "prettier": "2.0.2"
+  }
+}
