@@ -3,3 +3,6 @@ node_js:
   - 'stable'
 script: npm test
 after_success: npm run coverage
+env:
+  COVERALLS_REPO_TOKEN: '${{ secrets.COVERALLS_REPO_TOKEN }}'
+  COVERALLS_GIT_BRANCH: '${{ github.ref }}'
