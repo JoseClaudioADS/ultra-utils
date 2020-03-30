@@ -1,6 +1,6 @@
 {
   "name": "ultra-utils",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Ultra library of utilities",
   "main": "index.js",
   "scripts": {

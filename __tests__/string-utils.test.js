@@ -47,4 +47,43 @@ describe('String-Utils', function () {
       assert.equal(StringUtils.startsWithIgnoreCase(null, null, true), true);
     });
   });
+
+  describe('#endsWith()', function () {
+    it('should return true when the value ends with search', function () {
+      assert.equal(StringUtils.endsWith('Jose', 'se'), true);
+    });
+    it('should return false when the value not ends with search', function () {
+      assert.equal(StringUtils.endsWith('Jose', 'xD'), false);
+    });
+    it('should return false when the value is null', function () {
+      assert.equal(StringUtils.endsWith(null, 'xD'), false);
+    });
+    it('should return false when the search is null', function () {
+      assert.equal(StringUtils.endsWith('Jose', null), false);
+    });
+    it('should return true when the search and value are null', function () {
+      assert.equal(StringUtils.endsWith(null, null), true);
+    });
+  });
+
+  describe('#endsWithIgnoreCase()', function () {
+    it('should return true when the value ends with search', function () {
+      assert.equal(StringUtils.endsWithIgnoreCase('Jose', 'SE', true), true);
+    });
+    it('should return false when the value ends with search but case different', function () {
+      assert.equal(StringUtils.endsWithIgnoreCase('Jose', 'SE', false), false);
+    });
+    it('should return false when the value not ends with search', function () {
+      assert.equal(StringUtils.endsWithIgnoreCase('Jose', 'Xdd', true), false);
+    });
+    it('should return false when the value is null', function () {
+      assert.equal(StringUtils.endsWithIgnoreCase(null, 'xD', true), false);
+    });
+    it('should return false when the search is null', function () {
+      assert.equal(StringUtils.endsWithIgnoreCase('Jose', null, false), false);
+    });
+    it('should return true when the search and value are null', function () {
+      assert.equal(StringUtils.endsWithIgnoreCase(null, null, true), true);
+    });
+  });
 });

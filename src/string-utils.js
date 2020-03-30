@@ -7,6 +7,15 @@ class StringUtils {
     if (ignoreCase) return value.toUpperCase().startsWith(search.toUpperCase());
     else return value.startsWith(search);
   }
+
+  endsWith(value, search) {
+    return this.endsWithIgnoreCase(value, search, false);
+  }
+  endsWithIgnoreCase(value, search, ignoreCase) {
+    if (!value || !search) return value == search;
+    if (ignoreCase) return value.toUpperCase().endsWith(search.toUpperCase());
+    else return value.endsWith(search);
+  }
 }
 
 module.exports = new StringUtils();
