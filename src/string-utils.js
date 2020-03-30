@@ -21,6 +21,11 @@ class StringUtils {
     if (!str) return str;
     return str.split('').reverse().join('');
   }
+
+  captalize(str) {
+    if (!str) return str;
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  }
 }
 
 module.exports = new StringUtils();

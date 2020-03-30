@@ -98,4 +98,19 @@ describe('String-Utils', function () {
       assert.equal(StringUtils.reverse(''), '');
     });
   });
+
+  describe('#captalize()', function () {
+    it('should return captalize value - all upercase', function () {
+      assert.equal(StringUtils.captalize('jOSE'), 'JOSE');
+    });
+    it('should return captalize value', function () {
+      assert.equal(StringUtils.captalize('jose'), 'Jose');
+    });
+    it('should return null value', function () {
+      assert.equal(StringUtils.captalize(null), null);
+    });
+    it('should return same value', function () {
+      assert.equal(StringUtils.captalize(''), '');
+    });
+  });
 });
