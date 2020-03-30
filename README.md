@@ -4,7 +4,13 @@ Ultra-utils contains utility functions for all types of applications.
 
 # Install and usage
 
+To install:
+
     $ npm install ultra-utils --save
+
+To use:
+
+    const {StringUtils, ArrayUtils, <OtherModule>} = require('ultra-utils');
 
 ## Modules
 
