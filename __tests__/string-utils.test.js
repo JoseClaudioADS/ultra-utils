@@ -1,7 +1,7 @@
 const {describe, it} = require('mocha');
 const {assert} = require('chai');
 
-const StringUtils = require('../index');
+const {StringUtils} = require('../index');
 
 describe('String-Utils', function () {
   describe('#startsWith()', function () {

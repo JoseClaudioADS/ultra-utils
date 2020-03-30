@@ -9,11 +9,16 @@ Ultra-utils contains utility functions for all types of applications.
 ## Modules
 
 - StringUtils
+- ArrayUtils
 
 ### StringUtils
 
 - startsWith
 - startsWithIgnoreCase
+
+### ArrayUtils
+
+- chunk
 
 ## MIT Licence
 

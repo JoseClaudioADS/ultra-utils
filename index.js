@@ -1,1 +1,4 @@
-module.exports = require('./src/string-utils');
+module.exports = {
+  StringUtils: require('./src/string-utils'),
+  ArrayUtils: require('./src/array-utils'),
+};
