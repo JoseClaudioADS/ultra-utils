@@ -1,4 +1,4 @@
-# ultra-utils
+# ultra-utils [![Build Status](https://travis-ci.com/JoseClaudioADS/ultra-utils.svg?branch=master)](https://travis-ci.com/JoseClaudioADS/ultra-utils)
 
 Ultra-utils contains utility functions for all types of applications.
 
