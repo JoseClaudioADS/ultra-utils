@@ -4,7 +4,8 @@
   "description": "Ultra library of utilities",
   "main": "index.js",
   "scripts": {
-    "test": "nyc --reporter=html mocha --recursive \"./__tests__/*.test.js\""
+    "test": "nyc mocha --recursive \"./__tests__/*.test.js\"",
+    "test-coverage-html": "nyc --reporter=html mocha --recursive \"./__tests__/*.test.js\""
   },
   "repository": {
     "type": "git",
