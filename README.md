@@ -1,4 +1,4 @@
-# ultra-utils [![Build Status](https://travis-ci.com/JoseClaudioADS/ultra-utils.svg?branch=master)](https://travis-ci.com/JoseClaudioADS/ultra-utils)
+# ultra-utils [![Build Status](https://travis-ci.com/JoseClaudioADS/ultra-utils.svg?branch=master)](https://travis-ci.com/JoseClaudioADS/ultra-utils) [![Coverage Status](https://coveralls.io/repos/github/JoseClaudioADS/ultra-utils/badge.svg?branch=master)](https://coveralls.io/github/JoseClaudioADS/ultra-utils?branch=master)
 
 Ultra-utils contains utility functions for all types of applications.
 
@@ -8,13 +8,12 @@ Ultra-utils contains utility functions for all types of applications.
 
 ## Modules
 
- - StringUtils
+- StringUtils
 
 ### StringUtils
 
- - startsWith
- - startsWithIgnoreCase
-
+- startsWith
+- startsWithIgnoreCase
 
 ## MIT Licence
 
