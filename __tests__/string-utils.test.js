@@ -113,4 +113,40 @@ describe('String-Utils', function () {
       assert.equal(StringUtils.captalize(''), '');
     });
   });
+
+  describe('#snakeCase()', function () {
+    it('should return snakeCase of value', function () {
+      assert.equal(StringUtils.snakeCase('Test of snake'), 'test_of_snake');
+    });
+    it('should return snakeCase of value', function () {
+      assert.equal(StringUtils.snakeCase('Test*of snake'), 'test_of_snake');
+    });
+    it('should return same value', function () {
+      assert.equal(StringUtils.snakeCase(''), '');
+    });
+    it('should return null value', function () {
+      assert.equal(StringUtils.snakeCase(null), null);
+    });
+  });
+
+  describe('#ultraCase()', function () {
+    it('should return ultraCase of value', function () {
+      assert.equal(
+        StringUtils.ultraCase('Test of snake', '-'),
+        'test-of-snake',
+      );
+    });
+    it('should return ultraCase of value', function () {
+      assert.equal(
+        StringUtils.ultraCase('Test*of snake', '!'),
+        'test!of!snake',
+      );
+    });
+    it('should return same value', function () {
+      assert.equal(StringUtils.ultraCase(''), '');
+    });
+    it('should return null value', function () {
+      assert.equal(StringUtils.ultraCase(null), null);
+    });
+  });
 });
