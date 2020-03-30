@@ -86,4 +86,16 @@ describe('String-Utils', function () {
       assert.equal(StringUtils.endsWithIgnoreCase(null, null, true), true);
     });
   });
+
+  describe('#reverse()', function () {
+    it('should return reverse value', function () {
+      assert.equal(StringUtils.reverse('Jose'), 'esoJ');
+    });
+    it('should return null value', function () {
+      assert.equal(StringUtils.reverse(null), null);
+    });
+    it('should return same value', function () {
+      assert.equal(StringUtils.reverse(''), '');
+    });
+  });
 });

@@ -16,6 +16,11 @@ class StringUtils {
     if (ignoreCase) return value.toUpperCase().endsWith(search.toUpperCase());
     else return value.endsWith(search);
   }
+
+  reverse(str) {
+    if (!str) return str;
+    return str.split('').reverse().join('');
+  }
 }
 
 module.exports = new StringUtils();
